@@ -1,0 +1,77 @@
+html {
+	scroll-behavior: smooth;
+}
+
+h1 {
+	
+}
+
+.body {
+	width: 100%;
+
+}
+
+.main {
+	width: 100%;
+}
+
+.bar {
+	width: 100%;
+	height: 8%;
+	margin-left: 0%;
+	margin-bottom: 40px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: fixed;
+	display: flex;
+	justify-content: space-around;
+	border: 2px solid black;
+	border-radius: 5px;
+	background-color: white;
+}
+
+.bar-button {
+	text-decoration: none;
+	transition: transform 0.3s;
+	color: #0d106e;
+	margin-top: 10px;
+	margin-bottom: 0%;
+}
+
+.bar-button:hover {
+	transform: scale(1.1);
+	color: #0005a1;
+
+}
+
+.block {
+	margin: 5%;
+}
+
+.meet_team {
+	display: flex;
+	flex-direction: row;
+}
+
+.member_profile {
+	width: 25%;
+}
+
+.profile_pic {
+	max-width: 100%;
+	height: auto;
+}
+	
+@font-face {
+  font-family: 'Yellow Ginger';
+  src: url('../fonts/Yellow_Ginger.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('../fonts/coolvetica_rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
