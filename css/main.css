@@ -5,9 +5,21 @@ html {
 }
 
 h1 {
-	font-family: 'Arvo', 'Arial';
+	font-family: 'Roboto', 'Arial';
 	text-align: center;
 	font-weight: bold;
+	color: white;
+}
+
+.title-h1 {
+	margin-bottom: 4.75%;
+	padding-left: 10%;
+	font-size: 4rem;
+	text-align: left;
+}
+
+.filler {
+	margin-bottom: 0% !important;
 }
 
 h2 {
@@ -15,20 +27,63 @@ h2 {
 	font-weight: normal;
 }
 
+.title-h2 {
+	padding-left: 10%;
+	font-style: italic; 
+	text-align: left;
+	color: var(--off-white)
+}
+
+.block-title {
+	color: white;
+	font-size: 1.8rem;
+}
+
 h3 {
 	font-family: 'Arvo', 'Arial';
 	font-weight: normal;
+	color: white;
+}
+
+h4 {
+	font-family: 'Arvo', 'Arial';
+	font-weight: normal;
+	color: white;
 }
 
 p {
 	font-family: 'Arvo', 'Arial';
 	font-weight: normal;
+	color: white;
 }
 
 ul {
-	font-family: 'Arvo', 'Arial';
+  list-style-type: none;
+  padding: 0;
+  font-family: 'Arvo', 'Arial';
 	font-weight: normal;
+	color: white;
 }
+
+ul li {
+  margin: 0 0 10px 0;
+  padding: 0 0 0 20px;
+  line-height: 1.5;
+  position: relative;
+}
+
+ul li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--light-red);
+}
+
 
 body {
 	margin: 0;
@@ -36,10 +91,11 @@ body {
 	height: 100%;
 	padding: 1px;
 	overflow-x: hidden;
-	background-color: #fcd27e;
+	background-color: var(--dark-blue);
 }
 
 .main {
+	margin: 0;
 	width: 100%;
 }
 
@@ -57,13 +113,13 @@ body {
 	align-items: center;
 	border: 2px solid black;
 	border-radius: 5px;
-	background-color: #60add6;
+	background-color: var(--light-red);
 }
 
 .bar-button {
 	text-decoration: none;
 	transition: transform 0.3s;
-	color: #0d106e;
+	color: black;
 }
 
 .bar-button:hover {
@@ -91,7 +147,8 @@ body {
 	display: block;
 	width: 100px;
 	margin: auto;
-	transition: transform 0.3s;
+	padding-top: 10%;
+	animation: bounce 0.5s infinite alternate;
 }
 
 .arrow-img:hover {
@@ -99,12 +156,21 @@ body {
 
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
 .top-block {
 	padding-left: auto;
 	padding-right: auto;
-	padding-top: 12%;
-	padding-bottom: 12%;
-	background-color: white;
+	padding-top: 19%;
+	padding-bottom: 2%;
+	background-color: var(--deep-blue);
 }
 
 .block {
@@ -114,6 +180,14 @@ body {
 	padding-left: 5%;
 	padding-right: 5%;
 	background-color: transparent;
+	opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.block.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .mission {
@@ -143,6 +217,7 @@ body {
 .profile-pic {
 	max-width: 40%;
 	height: auto;
+	border-radius: 50%;
 }
 
 .advantages {
@@ -159,11 +234,15 @@ body {
 	justify-content: center;
 }
 
+
 footer {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	color: white;
+	padding: 2%;
+	background-color: var(--light-red);
 }
 	
 @font-face {
@@ -187,3 +266,30 @@ footer {
   		 url('../fonts/Arvo-Italic.ttf') format('truetype'),
   		 url('../fonts/Arvo-Regular.ttf') format('truetype');
 }
+
+:root {
+	--off-white: #EAE7DC;
+	--light-brown: #D8C3A5;
+	--grey: #8E8D8A;
+	--light-red: #E98074;
+	--red: #E85A4F;
+	--deep-blue: #0d045e;
+	--dark-blue: #090142;
+}
+
+#header:after {
+  content: '|';
+  animation: blink .5s infinite alternate;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+
+
