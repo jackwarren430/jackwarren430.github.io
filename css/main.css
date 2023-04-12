@@ -12,7 +12,7 @@ h1 {
 }
 
 .title-h1 {
-	margin-bottom: 4.75%;
+	margin-bottom: 9.4%;
 	padding-left: 10%;
 	font-size: 4rem;
 	text-align: left;
@@ -136,6 +136,7 @@ body {
 	border: 2px solid #ffc800;
 	border-radius: 30px;
 	background-color: #ffc800;
+	font-family: 'Roboto', 'Arial';
 }
 
 .contact-button:hover {
@@ -147,13 +148,20 @@ body {
 	display: block;
 	width: 100px;
 	margin: auto;
-	padding-top: 10%;
+	padding-top: 4%;
 	animation: bounce 0.5s infinite alternate;
 }
 
 .arrow-img:hover {
 	transform: scale(1.1);
 
+}
+
+.main-logo {
+	width: 30%;
+	padding-left: auto;
+	padding-right: auto;
+	padding-left: 3%;
 }
 
 @keyframes bounce {
@@ -168,8 +176,8 @@ body {
 .top-block {
 	padding-left: auto;
 	padding-right: auto;
-	padding-top: 19%;
-	padding-bottom: 2%;
+	padding-top: 9%;
+	padding-bottom: 1%;
 	background-color: var(--deep-blue);
 }
 
@@ -243,6 +251,7 @@ footer {
 	color: white;
 	padding: 2%;
 	background-color: var(--light-red);
+	font-family: 'Roboto', 'Arial';
 }
 	
 @font-face {
