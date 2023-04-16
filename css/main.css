@@ -179,6 +179,11 @@ body {
 	padding-top: 9%;
 	padding-bottom: 1%;
 	background-color: var(--deep-blue);
+	background-image: url('../img/city_background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
 }
 
 .block {
@@ -214,6 +219,7 @@ body {
 
 .member-profile {
 	width: 25%;
+	height: 25%;
 	flex-shrink: 0;
 	padding: 0%;
 	display: flex;
