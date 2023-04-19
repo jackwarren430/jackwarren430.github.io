@@ -272,7 +272,7 @@ footer {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	color: white;
+	color: black;
 	padding: 2%;
 	background-color: var(--light-red);
 	font-family: 'Roboto', 'Arial';
