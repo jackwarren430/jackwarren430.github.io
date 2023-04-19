@@ -36,7 +36,7 @@ h2 {
 
 .block-title {
 	color: white;
-	font-size: 1.8rem;
+	font-size: 2.4rem;
 }
 
 h3 {
@@ -188,8 +188,8 @@ body {
 
 .block {
 	margin: 5%;
-	margin-top: 10%;
-	margin-bottom: 10%;
+	margin-top: 15%;
+	margin-bottom: 20%;
 	padding-left: 5%;
 	padding-right: 5%;
 	background-color: transparent;
@@ -239,6 +239,7 @@ body {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	margin-left: 50%;
 }
 
 .accomplishments {
@@ -246,8 +247,25 @@ body {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
+	margin-right: 40%;
 }
 
+.right-arrow {
+	margin-left: 5%;
+	width: 85%;
+	transform: rotate(180deg);
+	position: absolute;
+  left: 55%;
+  top: -50%;
+}
+
+.left-arrow {
+	margin-left: 5%;
+	width: 80%;
+	position: absolute;
+  right: 60%;
+  top: -30%;
+}
 
 footer {
 	display: flex;
