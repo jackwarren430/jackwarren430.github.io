@@ -218,6 +218,7 @@ body {
 }
 
 .member-profile {
+	z-index: 50;
 	width: 25%;
 	height: 25%;
 	flex-shrink: 0;
@@ -229,7 +230,8 @@ body {
 }
 
 .profile-pic {
-	max-width: 40%;
+	z-index: 49;
+	max-width: 45%;
 	height: auto;
 	border-radius: 50%;
 }
@@ -266,6 +268,23 @@ body {
   right: 60%;
   top: -30%;
 }
+
+.big-graphic {
+	width: 70%;
+	position: absolute;
+  right: 50%;
+  bottom: -280%;
+  z-index: 1;
+}
+
+.big-graphic-2 {
+	width: 80%;
+	position: absolute;
+  left: 40%;
+  bottom: -100%;
+  z-index: 1;
+}
+
 
 footer {
 	display: flex;
