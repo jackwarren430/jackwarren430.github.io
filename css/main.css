@@ -14,8 +14,16 @@ h1 {
 .title-h1 {
 	margin-bottom: 9.4%;
 	padding-left: 10%;
-	font-size: 4rem;
+	font-size: 5rem;
 	text-align: left;
+}
+
+.title-h2 {
+	padding-left: 12%;
+	font-size: 2rem;
+	font-style: italic; 
+	text-align: left;
+	color: var(--off-white)
 }
 
 .filler {
@@ -25,31 +33,15 @@ h1 {
 h2 {
 	font-family: 'Arvo', 'Arial';
 	font-weight: normal;
-}
-
-.title-h2 {
-	padding-left: 10%;
-	font-style: italic; 
-	text-align: left;
-	color: var(--off-white)
-}
-
-.block-title {
 	color: white;
-	font-size: 2.4rem;
+	font-size: 1.7rem;
 }
 
 h3 {
 	font-family: 'Arvo', 'Arial';
 	font-weight: normal;
 	color: white;
-	font-size: 1.5rem;
-}
-
-h4 {
-	font-family: 'Arvo', 'Arial';
-	font-weight: normal;
-	color: white;
+	font-size: 1.2rem;
 }
 
 p {
@@ -160,8 +152,8 @@ body {
 
 }
 
-.main-logo {
-	width: 30%;
+.profile-picture {
+	width: 25%;
 	padding-left: auto;
 	padding-right: auto;
 	padding-left: 3%;
@@ -189,103 +181,21 @@ body {
   
 }
 
-.block {
+.text-block {
 	margin: 5%;
-	margin-top: 15%;
-	margin-bottom: 20%;
 	padding-left: 5%;
 	padding-right: 5%;
+	font-size: 3rem;
+	text-decoration: underline;
 	background-color: transparent;
 	opacity: 0;
-  transform: translateY(20px);
+  transform: translateX(-20px);
   transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-.block.active {
+.text-block.active {
   opacity: 1;
-  transform: translateY(0);
-}
-
-.mission {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-}
-
-.meet-team {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-}
-
-.member-profile {
-	z-index: 50;
-	width: 25%;
-	height: 25%;
-	flex-shrink: 0;
-	padding: 0%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
-.profile-pic {
-	z-index: 49;
-	max-width: 45%;
-	height: auto;
-	border-radius: 50%;
-}
-
-.advantages {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	margin-left: 50%;
-}
-
-.accomplishments {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	margin-right: 40%;
-}
-
-.right-arrow {
-	margin-left: 5%;
-	width: 85%;
-	transform: rotate(180deg);
-	position: absolute;
-  left: 55%;
-  top: -50%;
-}
-
-.left-arrow {
-	margin-left: 5%;
-	width: 80%;
-	position: absolute;
-  right: 60%;
-  top: -15%;
-}
-
-.big-graphic {
-	width: 70%;
-	position: absolute;
-  right: 50%;
-  bottom: -280%;
-  z-index: 1;
-}
-
-.big-graphic-2 {
-	width: 80%;
-	position: absolute;
-  left: 40%;
-  bottom: -100%;
-  z-index: 1;
+  transform: translateX(0);
 }
 
 .soc-icon {
@@ -339,19 +249,6 @@ footer {
 	--dark-blue: #090142;
 }
 
-#header:after {
-  content: '|';
-  animation: blink .5s infinite alternate;
-}
-
-@keyframes blink {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
 
 
 
