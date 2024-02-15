@@ -40,8 +40,10 @@ h2 {
 h3 {
 	font-family: 'Arvo', 'Arial';
 	font-weight: normal;
+	font-style: italic;
 	color: white;
 	font-size: 1.2rem;
+	margin-left: 2%;
 }
 
 p {
@@ -60,7 +62,7 @@ ul {
 }
 
 ul li {
-  margin: 0 0 10px 0;
+  margin: 2%;
   padding: 0 0 0 20px;
   line-height: 1.5;
   position: relative;
@@ -141,7 +143,7 @@ body {
 
 .arrow-img {
 	display: block;
-	width: 100px;
+	width: 6.5%;
 	margin: auto;
 	padding-top: 4%;
 	animation: bounce 0.5s infinite alternate;
@@ -159,15 +161,6 @@ body {
 	padding-left: 3%;
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-5px);
-  }
-}
-
 .top-block {
 	padding-left: auto;
 	padding-right: auto;
@@ -183,10 +176,12 @@ body {
 
 .text-block {
 	margin: 5%;
+	margin-bottom: 3%;
 	padding-left: 5%;
 	padding-right: 5%;
 	font-size: 3rem;
 	text-decoration: underline;
+	color: white;
 	background-color: transparent;
 	opacity: 0;
   transform: translateX(-20px);
@@ -198,13 +193,38 @@ body {
   transform: translateX(0);
 }
 
+.education {
+	margin-left: 12%;
+}
+
+.project-bar {
+	margin-bottom: 5%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.project-bar div {
+	#margin: 3%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.project-image {
+	max-width: 60%;
+	margin: 2%;
+}
+
 .soc-icon {
 	width: 130%;
 	height: auto;
 	margin-left: 5%;
 	margin-right: 5%;
 }
-
 
 footer {
 	display: flex;
@@ -215,6 +235,15 @@ footer {
 	padding: 2%;
 	background-color: var(--light-red);
 	font-family: 'Roboto', 'Arial';
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
 }
 	
 @font-face {
