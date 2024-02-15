@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<title>Jack Warren - TOS/Contract Summarizer</title>
+</head>
+<body>
+	<div class="main">
+		<div class="display-text">
+			<h1>TOS/Contract Summarizer</h1>
+			<a href="https://tospersistencesummarizer.streamlit.app/" target="_blank">Link to web app</a>
+			<h2>Description:</h2>
+			<p>This web application summarizes and explains sectins of any Terms of Service text or contracts.</p>
+			<p>To generate the summaries, the app makes an API call to an open-source LLM on HuggingFace, and same for the exlpanations.</p>
+			<p>If the original sections are labelled with roman numerals or numbers, the summaries will match those sections. If not, it will section off the contract every 800 words.</p>
+			<p>The web app was built with Streamlit, and hosted on Streamlit cloud. The backend is just Python.</p>
+		</div>
+		<h3 style="padding-left: 10%; padding-right: 10%;">Main Screen:</h3>
+		<img src="../img/project4-1.jpeg" class="display-image">
+		<h3 style="padding-left: 10%; padding-right: 10%;">Paste any text in.</h3>
+		<img src="../img/project4-2.jpeg" class="display-image">
+		<h3 style="padding-left: 10%; padding-right: 10%;">Or select a pdf file.</h3>
+		<img src="../img/project4-3.jpeg" class="display-image">
+		<h3 style="padding-left: 10%; padding-right: 10%;">Summaries of each section will appear below.</h3>
+		<img src="../img/project4-4.jpeg" class="display-image">
+		<h3 style="padding-left: 10%; padding-right: 10%;">"More on this section" will display a explanation of the section.</h3>
+		<img src="../img/project4-5.jpeg" class="display-image">
+	</div>
+</body>
+</html>

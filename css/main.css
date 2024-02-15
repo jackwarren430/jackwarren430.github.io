@@ -27,7 +27,7 @@ h1 {
 }
 
 .filler {
-	margin-bottom: 0% !important;
+	margin-bottom: 7% !important;
 }
 
 h2 {
@@ -46,11 +46,31 @@ h3 {
 	margin-left: 2%;
 }
 
+h4 {
+	font-family: 'Arvo', 'Arial';
+	font-weight: normal;
+	font-style: italic;
+	color: white;
+	font-size: 1rem;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+a {
+	font-family: 'Arvo', 'Arial';
+	font-weight: normal;
+	font-style: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
 p {
 	font-family: 'Arvo', 'Arial';
 	font-weight: normal;
 	color: white;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 ul {
@@ -193,7 +213,15 @@ body {
   transform: translateX(0);
 }
 
+.display-text {
+	padding: 5%;
+}
+
 .education {
+	margin-left: 12%;
+}
+
+.project {
 	margin-left: 12%;
 }
 
@@ -206,8 +234,7 @@ body {
 }
 
 .project-bar div {
-	#margin: 3%;
-	width: 50%;
+	width: 40%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -217,6 +244,17 @@ body {
 .project-image {
 	max-width: 60%;
 	margin: 2%;
+}
+
+.display-image {
+	max-width: 50%;
+	margin: 6%;
+	margin-left: 20%;
+	margin-right: 30%;
+}
+
+.interests {
+	margin-left: 13%;
 }
 
 .soc-icon {

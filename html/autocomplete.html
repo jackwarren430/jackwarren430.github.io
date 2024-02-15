@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<title>Jack Warren - Radix Autocompletion</title>
+</head>
+<body>
+	<div class="main">
+		<div class="display-text">
+			<h1>Radix Autocompletion</h1>
+			<h2>Description:</h2>
+			<p>This program originally started as custom Radix Tree implementation for my Data Structures final project, but I realized it would be incredibly simple to do more with it.</p>
+			<p>The Radix Tree stores Strings in a tree, where each node is a character. Each character node points to another character node, and the last character in the string is flagged.</p>
+			<p>This Autocompletion program works by storing an entire dicitonary in one Radix Tree. If you pick any node in the tree, you can get all the possible words by simply tracing the rest of the pointers.</p>
+			<p>Because the complexity of String search is a linear relationship with the length of the String, and there's a finite amount of autocompletions, this program runs in O(k) time.</p>
+		</div>
+		<img src="../img/project3-1.png" class="display-image">
+		<img src="../img/project3-2.png" class="display-image">
+	</div>
+</body>
+</html>
